@@ -28,18 +28,14 @@ namespace Opacidad
         private void Opacidad_MouseEnter(object sender, MouseEventArgs e)
         {
             Image imagenes = (sender as Image);
-            imagenes.Opacity = 0.5;
-        }
-
-        private void NoOpacidad_MouseLeave(object sender, MouseEventArgs e)
-        {
-            Image imagenes = (sender as Image);
             imagenes.Opacity = 1;
         }
 
-        private void episodioVIImagen_MouseLeave(object sender, MouseEventArgs e)
+        private void MediaOpacidad_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            Image imagenes = (sender as Image);
+            imagenes.Opacity = 0.5;
         }
+
     }
 }
